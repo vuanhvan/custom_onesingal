@@ -33,8 +33,19 @@ android {
     }
 }
 
+def work_version = "2.7.1" //"2.7.0-alpha05"
+
 dependencies {
     api 'com.onesignal:OneSignal:3.16.0'
+
+     // (Java only)
+    implementation "androidx.work:work-runtime:$work_version"
+
+    // Kotlin + coroutines
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+
+    // optional - RxJava2 support
+    implementation "androidx.work:work-rxjava2:$work_version"
 }
 
 // Adds required manifestPlaceholders keys to allow mainifest merge gradle step to complete
