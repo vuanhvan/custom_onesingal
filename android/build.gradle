@@ -38,8 +38,8 @@ def work_version = "2.7.1" //"2.7.0-alpha05"
 dependencies {
     api 'com.onesignal:OneSignal:4.0.0'
 
-    api 'androidx.work:work-runtime:[2.1.0, 2.7.99]'
-
+    //api 'androidx.work:work-runtime:[2.1.0, 2.7.99]'
+    api 'androidx.work:work-runtime:2.7.0-rc01'
      // (Java only)
     //implementation "androidx.work:work-runtime:$work_version"
 
